@@ -62,7 +62,7 @@
     function wiyrc_global_start(){
     global $mybb;
 
-        if($mybb->input['comments'] == '') {
+        if(empty($mybb->input['comments'])) {
 
              error("Reputation comment is required.");
         }
